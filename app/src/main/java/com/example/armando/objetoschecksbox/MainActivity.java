@@ -18,12 +18,8 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((CheckBox) view).isChecked();
         TextView textContent = (TextView) findViewById(R.id.textView);
         switch (view.getId()) {
-            case R.id.checkbox_milk:
-                textContent.setText(checked?"Milk Coffe":"Black as the midnight sky on a moonless night");
-                break;
-            case R.id.checkbox_sugar:
-                textContent.setText(checked?"Sweet":"Keep it bitter");
-                break;
+            case R.id.checkbox_milk: textContent.setText(checked?"Milk Coffe":"Black as the midnight sky on a moonless night");break;
+            case R.id.checkbox_sugar: textContent.setText(checked?"Sweet":"Keep it bitter");break;
         }
     }
 }
